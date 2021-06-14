@@ -1,8 +1,0 @@
-server:
-  port: 8080
-
-#spring:
-  #datasource:
-    #url: jdbc:hive2://bigdata115.depts.bingosoft.net:22115/user14_db
-    #username: user14
-    #password: pass@bingo14
