@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>查询分析器</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <!-- 引入element 的组件库-->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+
+</head>
+<style>
+    .el-header {
+        background-color: #B3C0D1;
+        color: #333;
+        line-height: 60px;
+    }
+    .el-aside {
+        color: #333;
+        height: 100%;
+    }
+    .el-dropdown{
+        float: right;
+    }
+
+</style>
+
+<body>
+<div id="app">
+    <el-container style="height: 800px; border: 1px solid black">
+        <el-header>
+            <el-button @click="dialogFormVisible=true">设置连接</el-button>
+            <el-dialog title="建立连接" :visible.sync="dialogFormVisible">
+                <el-form :rules="rules" ref="connectForm">
+                    <el-form-item label="URL" prop="url"></el-form-item>
+                    <el-input v-model="connectForm.url"></el-input>
+                    <el-form-item label="User" prop="user"></el-form-item>
+                    <el-input v-model="connectForm.user"></el-input>
+                    <el-form-item label="Password" prop="pwd"></el-form-item>
+                    <el-input v-model="connectForm.pwd"></el-input>
+                </el-form>
+                <div slot="footer" class="dialog-footer">
+                    <el-button @click="cancel">取 消</el-button>
+                    <el-button type="primary" @click="connect">确 定</el-button>
+                </div>
+            </el-dialog>
+            <el-dropdown>
+                <i class="el-icon-user-solid" style="margin-right: 15px"></i>
+                <el-dropdown-menu slot="dropdown">
+                    <el-dropdown-item @click.native="logout">退出登录</el-dropdown-item>
+                </el-dropdown-menu>
+            </el-dropdown>
+        </el-header>
+        <el-container style="height:400px; border: 1px solid black">
+            <div width="auto" style="height:100%">
+                <el-aside width="auto" style="background-color: rgb(238, 241, 246)" >
+                    <el-button @click="showDB">{{connection}}</el-button>
+                    <el-menu>
+                        <el-submenu v-for="(db,index) in databases" @click.native="showTB(index)"  :index="index+''">
+                            <template slot="title">{{db}}</template>
+                                <el-menu-item v-for="tb in tables[index]">
+                                    <template slot="title">{{tb}}</template>
+                                </el-menu-item>
+                        </el-submenu>
+                        </el-button>
+                    </el-menu>
+                </el-aside>
+            </div>
+            <el-container>
+                <el-header style="text-align: left; font-size: 12px">
+                    <el-tag >SQL查询</el-tag>
+                    <el-select v-model="db_selected" placeholder="请选择数据库" @change="changeDB">
+                        <el-option
+                                v-for="(db,i) in databases" :value="db" :index="i+''">
+                        </el-option>
+                    </el-select>
+                    <el-button type="success" @click="query">运行</el-button>
+                </el-header>
+
+                <el-main style="background-color:white; height:0;flex-grow:1;" >
+                    <el-input v-model="input" type="textarea" :rows="13" resize="none">
+
+                    </el-input>
+                </el-main>
+                <el-main style="background-color:white; border-top:1px solid rgb(220 220 220)">
+                    <el-table border :data="table_data">
+                        <el-table-column v-for="name in name_list" :value="name" :label="name" :prop="name">
+                        </el-table-column>
+                    </el-table>
+                </el-main>
+            </el-container>
+
+        </el-container>
+    </el-container>
+</div>
+</body>
+<script>
+    let v=new Vue({
+        el: "#app",
+        data(){
+            return{
+                dialogFormVisible: false,
+                input:'',
+                connectForm:{},
+                rules: {   //表单验证
+                    url: [{ required: true, message: "请输入url", trigger: "blur" }],
+                    user: [{ required: true, message: "请输入user", trigger: "blur" }],
+                    pwd: [{ required: true, message: "请选择password", trigger: "blur" }]
+                },
+                connection:'',
+                flag:false,
+                databases: [],
+                tables:[],
+                db_selected:'',
+                name_list:[],
+                table_data:[]
+            }
+        },
+        mounted () {
+            this.getUser();
+        },
+        methods: {
+            connect(){
+                $.ajax({
+                    method:'post',
+                    url:'http://localhost:8080/connect/login',
+                    data:{
+                        url:this.connectForm.url,
+                        user:this.connectForm.user,
+                        password:this.connectForm.pwd
+                    },
+                    async: false,
+                    success:function (res) {
+                        if(res==="error"){
+                            alert("连接失败,请检查连接信息或重试");
+                        }else{
+                            alert("连接成功,离开时请退出登录");
+                            v.connection=res;
+                            v.flag=true;
+                        }
+                    }
+                });
+                if(v.flag) {
+                    this.cancel();
+                    this.connectForm.url = '';
+                    this.connectForm.user = '';
+                    this.connectForm.pwd = '';
+                }
+
+            },
+            cancel(){
+                this.dialogFormVisible=false
+            },
+            query(){
+                $.ajax({
+                    method:'post',
+                    url:'http://localhost:8080/sql/query',
+                    data:{
+                        sql:v.input,
+                        database: v.db_selected
+                    },
+                    success:function (res){
+                        v.name_list=Object.keys(res[0]);
+                        v.table_data=res;
+                    }
+                })
+            },
+            showDB(){
+                $.ajax({
+                    method:'post',
+                    url:'http://localhost:8080/sql/databases',
+                    success:function (res) {
+                        v.databases=res;
+                    }
+                })
+            },
+            showTB(index){
+                $.ajax({
+                    method:"post",
+                    url:'http://localhost:8080/sql/tables',
+                    data: {
+                        database: v.databases[index]
+                    },
+                    success:function (res) {
+                        v.$set(v.tables,index,res);
+                    }
+                })
+            },
+            changeDB(value){
+                v.databases.forEach(item => {
+                    if(item.id===value){
+                        v.db_selected = item.value;
+                    }
+                })
+            },
+            logout(){
+                if(v.connection==="未登录"){
+                    alert("未登录");
+                }else{
+                    $.ajax({
+                        method:"post",
+                        url:'http://localhost:8080/connect/logout',
+                        success:function (res) {
+                            if(res==="ok"){
+                                alert("退出成功");
+                                v.dialogFormVisible=false;
+                                v.input='';
+                                v.connectForm={};
+                                v.connection='未登录';
+                                v.flag=false;
+                                v.databases=[];
+                                v.tables=[];
+                                v.db_selected='';
+                                v.name_list=[];
+                                v.table_data=[];
+                            }else{
+                                alert("退出失败，请重试！");
+                            }
+                        }
+                    })
+                }
+            },
+            getUser(){
+                $.ajax({
+                    method:"post",
+                    url:'http://localhost:8080/connect/user',
+                    success:function (res) {
+                        v.connection=res;
+                    }
+                })
+            }
+
+        }
+    })
+
+</script>
+</html>
