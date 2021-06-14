@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6680628d-c68c-47b9-b9da-36300fa2f913" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/../SMBMS/smbms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat/chat.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java面试题/java面试题.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq/rabbitmq.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq/src/main/java/com/ytc/rabbitmq/direct/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq/src/main/java/com/ytc/rabbitmq/direct/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq/src/main/java/com/ytc/rabbitmq/fanout/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq/src/main/java/com/ytc/rabbitmq/fanout/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq/src/main/java/com/ytc/rabbitmq/topic/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq/src/main/java/com/ytc/rabbitmq/topic/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thread/thread.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../大数据怎么存？/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../大数据怎么存？/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparksql/demo/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparksql/demo/api/ConnectApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparksql/demo/api/SQLApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparksql/demo/api/indexApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparksql/demo/dao/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparksql/demo/pojo/Hive2Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/db.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sparksql/demo/DemoApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/查询分析器使用说明书.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/查询分析器设计说明书.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/big_data_test1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/src/main/java/DownLoad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/src/main/java/FileSynchronizer/FileSynchronizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/src/main/java/FileSynchronizer/S3Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/src/main/java/MultipartDownLoad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/src/main/java/MultipartUpload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/src/main/java/RecoveryVersion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/src/main/java/ShowVersion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/src/main/java/UpLoad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/target/classes/DownLoad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/target/classes/FileSynchronizer/FileSynchronizer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/target/classes/FileSynchronizer/FileSynchronizer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/target/classes/FileSynchronizer/FileSynchronizer$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/target/classes/FileSynchronizer/FileSynchronizer$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/target/classes/FileSynchronizer/FileSynchronizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/target/classes/FileSynchronizer/S3Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/target/classes/MultipartDownLoad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/target/classes/MultipartUpload.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/target/classes/RecoveryVersion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/target/classes/ShowVersion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/target/classes/UpLoad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/文件同步器使用展示.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/文件同步器使用说明书.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_data_test1/文件同步器设计说明书.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../大数据怎么存？/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../大数据怎么存？/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../大数据怎么存？/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../大数据怎么存？/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../大数据怎么存？/src/main/java/FileSynchronizer/S3Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/../大数据怎么存？/src/main/java/FileSynchronizer/S3Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../大数据怎么存？/target/classes/FileSynchronizer/S3Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/../大数据怎么存？/target/classes/FileSynchronizer/S3Util.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1tfOr0Xj3eJmPgod1FSpHtbeVpg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spark jdbc dependencies" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.17011495" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
+    <configuration name="ConnectApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sparksql.demo.api.ConnectApi" />
+      <module name="大数据离线计算" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparksql.demo.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.sparksql.demo.api.Demo" />
+      <module name="大数据离线计算" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparksql.demo.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Hive2Connection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sparksql.demo.pojo.Hive2Connection" />
+      <module name="大数据离线计算" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparksql.demo.pojo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="db.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/大数据离线计算/templates/db.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="大数据离线计算" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sparksql.demo.DemoApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="CLASSPATH_FILE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.db.html" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="应用程序.ConnectApi" />
+      <item itemvalue="应用程序.Demo" />
+      <item itemvalue="应用程序.Hive2Connection" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.db.html" />
+        <item itemvalue="应用程序.Demo" />
+        <item itemvalue="应用程序.Hive2Connection" />
+        <item itemvalue="应用程序.ConnectApi" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6680628d-c68c-47b9-b9da-36300fa2f913" name="默认的" comment="" />
+      <created>1623156871612</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623156871612</updated>
+      <workItem from="1623156877548" duration="342000" />
+      <workItem from="1623161838649" duration="705000" />
+      <workItem from="1623162587046" duration="1525000" />
+      <workItem from="1623167258619" duration="1349000" />
+      <workItem from="1623201740434" duration="20332000" />
+      <workItem from="1623224575864" duration="4472000" />
+      <workItem from="1623229716128" duration="926000" />
+      <workItem from="1623286843822" duration="61000" />
+      <workItem from="1623287069089" duration="67000" />
+      <workItem from="1623287154013" duration="4011000" />
+      <workItem from="1623291258752" duration="15760000" />
+      <workItem from="1623373576549" duration="25459000" />
+      <workItem from="1623399583738" duration="1479000" />
+      <workItem from="1623401139072" duration="1844000" />
+      <workItem from="1623463278958" duration="9924000" />
+      <workItem from="1623489533509" duration="435000" />
+      <workItem from="1623501467829" duration="4004000" />
+      <workItem from="1623550578427" duration="7842000" />
+      <workItem from="1623558560872" duration="76000" />
+      <workItem from="1623558667063" duration="622000" />
+      <workItem from="1623576178632" duration="10204000" />
+      <workItem from="1623627702402" duration="4607000" />
+      <workItem from="1623632430179" duration="5425000" />
+      <workItem from="1623637972502" duration="1099000" />
+      <workItem from="1623640574462" duration="9601000" />
+      <workItem from="1623652230572" duration="72000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="329" y="0" width="636" height="689" key="#&lt;template&gt;_of_Application" timestamp="1623226201647">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="329" y="0" width="636" height="689" key="#&lt;template&gt;_of_Application/0.0.1280.689@0.0.1280.689" timestamp="1623226201647" />
+    <state x="171" y="0" width="952" height="689" key="#&lt;template&gt;_of_Spring_Boot" timestamp="1623290529609">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="171" y="0" width="952" height="689" key="#&lt;template&gt;_of_Spring_Boot/0.0.1280.689@0.0.1280.689" timestamp="1623290529609" />
+    <state x="329" y="0" width="636" height="689" key="#Demo" timestamp="1623291370023">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="329" y="0" width="636" height="689" key="#Demo/0.0.1280.689@0.0.1280.689" timestamp="1623291370023" />
+    <state x="171" y="0" width="952" height="689" key="#DemoApplication" timestamp="1623389031903">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="171" y="0" width="952" height="689" key="#DemoApplication/0.0.1280.689@0.0.1280.689" timestamp="1623389031903" />
+    <state x="464" y="131" key="#Web浏览器" timestamp="1623387880351">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="464" y="131" key="#Web浏览器/0.0.1280.689@0.0.1280.689" timestamp="1623387880351" />
+    <state x="96" y="0" width="1159" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623389022207">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="96" y="0" width="1159" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1623389022207" />
+    <state x="262" y="23" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1623162184675">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="262" y="23" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1280.689@0.0.1280.689" timestamp="1623162184675" />
+    <state x="471" y="0" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1623401054626">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="471" y="0" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1280.689@0.0.1280.689" timestamp="1623401054626" />
+    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623156925737">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1623156925737" />
+    <state x="121" y="0" key="#项目结构" timestamp="1623400591228">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="121" y="0" key="#项目结构/0.0.1280.689@0.0.1280.689" timestamp="1623400591228" />
+    <state x="393" y="187" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1623389931685">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="393" y="187" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.689@0.0.1280.689" timestamp="1623389931685" />
+    <state x="421" y="86" key="FileChooserDialogImpl" timestamp="1623401905466">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="421" y="86" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1623401905466" />
+    <state width="1236" height="202" key="GridCell.Tab.0.bottom" timestamp="1623651115620">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1236" height="202" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1623651115620" />
+    <state width="1236" height="202" key="GridCell.Tab.0.center" timestamp="1623651115620">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1236" height="202" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1623651115620" />
+    <state width="1236" height="202" key="GridCell.Tab.0.left" timestamp="1623651115620">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1236" height="202" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1623651115620" />
+    <state width="1236" height="202" key="GridCell.Tab.0.right" timestamp="1623651115620">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1236" height="202" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1623651115620" />
+    <state width="1236" height="201" key="GridCell.Tab.1.bottom" timestamp="1623651115616">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1236" height="201" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1623651115616" />
+    <state width="1236" height="201" key="GridCell.Tab.1.center" timestamp="1623651115615">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1236" height="201" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1623651115615" />
+    <state width="1236" height="201" key="GridCell.Tab.1.left" timestamp="1623651115615">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1236" height="201" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1623651115615" />
+    <state width="1236" height="201" key="GridCell.Tab.1.right" timestamp="1623651115616">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1236" height="201" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1623651115616" />
+    <state width="1236" height="208" key="GridCell.Tab.2.bottom" timestamp="1623558480592">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1236" height="208" key="GridCell.Tab.2.bottom/0.0.1280.689@0.0.1280.689" timestamp="1623558480592" />
+    <state width="1236" height="208" key="GridCell.Tab.2.center" timestamp="1623558480592">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1236" height="208" key="GridCell.Tab.2.center/0.0.1280.689@0.0.1280.689" timestamp="1623558480592" />
+    <state width="1236" height="208" key="GridCell.Tab.2.left" timestamp="1623558480592">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1236" height="208" key="GridCell.Tab.2.left/0.0.1280.689@0.0.1280.689" timestamp="1623558480592" />
+    <state width="1236" height="208" key="GridCell.Tab.2.right" timestamp="1623558480592">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1236" height="208" key="GridCell.Tab.2.right/0.0.1280.689@0.0.1280.689" timestamp="1623558480592" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1623643122748">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1623643122748" />
+    <state x="297" y="153" key="run.anything.popup" timestamp="1623581076912">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="297" y="153" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1623581076912" />
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1623472267264">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1623472267264" />
+  </component>
+</project>
