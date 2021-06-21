@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://D:/flink dependencies" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://D:/flink dependencies" />
+        </SOURCES>
+        <jarDirectory url="file://D:/flink dependencies" recursive="false" />
+        <jarDirectory url="file://D:/flink dependencies" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.75" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.75" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MAVEN_REPOSITORY$/org/apache/flink/flink-jdbc_2.11/1.10.0" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MAVEN_REPOSITORY$/org/apache/flink/flink-jdbc_2.11/1.10.0" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="scala-sdk-2.11.8" level="application" />
+  </component>
+</module>
