@@ -1,0 +1,21 @@
+按月查看销售额
+select  to_char(o.produce_time , 'YYYY-MM') as month ,  sum(o.price)  as  total_sales from  mall."order" o
+where to_char(o.produce_time , 'YYYY-MM')='2021-06'  group by to_char(o.produce_time , 'YYYY-MM')
+
+按月查看新增人数
+select  to_char(u.registration_time , 'YYYY-MM') as month ,  count(id)  as  new_user_count from  mall."user" u
+where to_char(u.registration_time , 'YYYY-MM')='2021-06'  group by to_char(u.registration_time , 'YYYY-MM')
+
+按月查看城市销售额
+select  to_char(o.produce_time , 'YYYY-MM') as month ,o.address as city ,sum(o.price) as total_sales from  mall."user" u join mall."order" o
+on u.id=o.user_id where to_char(o.produce_time , 'YYYY-MM')='2021-06' group by to_char(o.produce_time , 'YYYY-MM'),o.address
+
+按月查看城市，商品类别销售额
+select  to_char(o.produce_time , 'YYYY-MM') as month ,o.address as city ,c.name as category ,sum(o.price) as total_sales from  mall."user" u join mall."order" o
+on u.id=o.user_id join mall."sku" s on o.sku_id = s.id join mall."spu" spu on spu.id =s.spu_id join mall."category" c on c.id =spu.category_id 
+where to_char(o.produce_time , 'YYYY-MM')='2021-06' group by to_char(o.produce_time , 'YYYY-MM'),o.address,c.name
+
+按月查看性别，商品类别销售额
+select  to_char(o.produce_time , 'YYYY-MM') as month ,u.gender as gender ,c.name as category ,sum(o.price) as total_sales from  mall."user" u join mall."order" o
+on u.id=o.user_id join mall."sku" s on o.sku_id = s.id join mall."spu" spu on spu.id =s.spu_id join mall."category" c on c.id =spu.category_id 
+where to_char(o.produce_time , 'YYYY-MM')='2021-06' group by to_char(o.produce_time , 'YYYY-MM'),u.gender ,c.name
